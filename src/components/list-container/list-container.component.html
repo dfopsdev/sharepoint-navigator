@@ -1,0 +1,10 @@
+<div class="list-container">
+    <h3>SharePoint Contents:</h3>
+    <ul>
+        <li *ngFor="let item of items" [attr.data-item-id]="item.id">
+        <span class="content-title">{{ item.title }}</span>
+        <button class="favorite-button" (click)="toggleFavorite(item.id)">Favorite</button>
+        </li>
+    </ul>
+</div>
+  
